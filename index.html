@@ -1,0 +1,59 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b4dff94a38.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Meal App</title>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <img src="assets/images/Stoopid-Monkey-Logo.png" alt="">
+            <label class="switch">
+                <input type="checkbox" id="themeChangeCheckBox">
+                <span class="slider round"></span>
+            </label>
+        </nav>
+        <main class="main-section">
+            <div class="favouriteMeals">
+                <div class="favouriteMealsHeader">
+                    <i class="fa-solid fa-circle-xmark" id="closeBtn"></i>
+                    <h2>My Favourite Meals</h2>
+                    <b id="clearAllFvt">Clear All</b>
+                </div>
+                <div class="favouriteMealsList" id="favouriteMealsList">
+
+                </div>
+            </div>
+            <div id="searchPage">
+                <section class="first-section">
+                    <h2>Search Your Meal</h2>
+                    <input type="text" id="search" placeholder="Search Your Meal">
+                    <div class="favIconBtn">
+                        <i class="fa-regular fa-star"></i> &nbsp;&nbsp;
+                        <b>Favorites List ( <span id="totalFvtCount">0</span> )</b>
+                    </div>
+                </section>
+                <section class="second-section">
+                    <div class="search-result" id="searchResults">
+
+                    </div>
+                    <!-- <div class="favourite-meals-btn">
+                    <button class="btn" id="favouriteMealsBtn">My Favourite Meals</button>
+                </div> -->
+                </section>
+            </div>
+            <div id="detailsPage">
+                <i id="backToHome" class="fa-solid fa-arrow-left"></i>
+                <section class="detailsSection">
+                </section>
+            </div>
+        </main>
+    </div>
+    <script type="module" src="app.js"></script>
+</body>
+
+</html>
